@@ -1,9 +1,8 @@
 function massageCast(cast, avatars) {
   return cast.map(member => {
-    const Avatar = avatars.find(avatar => avatar.name === member.data.Image_Filename)
+    const Avatar = avatars.find(avatar => avatar.name === member.Image_Filename)
     return {
-      ...member.data,
-      ...member.fields,
+      ...member,
       Avatar
     }
   })
@@ -65,7 +64,7 @@ const client = {
       .join("")
 
     const filtered = cast.filter(member => {
-      const name = member.data.English_Name
+      const name = member.English_Name
         .toUpperCase()
         .split(" ")
         .join("")

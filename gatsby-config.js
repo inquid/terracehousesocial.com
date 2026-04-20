@@ -25,6 +25,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data`,
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -38,20 +46,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/ths_favicon.png`,
       },
-    },
-    {
-      resolve: `gatsby-source-airtable`,
-      options: {
-        apiKey: process.env.AIRTABLE_KEY,
-        concurrency: 5,
-        tables: [
-          {
-            baseId: process.env.AIRTABLE_BASE_ID,
-            tableName: `Cast`,
-            tableView: `All Cast`
-          }
-        ]
-      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -1,0 +1,38 @@
+[
+  {
+    "Id": "1",
+    "English_Name": "Dani Lee",
+    "Japanese_Name": "",
+    "Image_Filename": null,
+    "Season_Name": "ALOHA STATE",
+    "Season_Year": 2016,
+    "Type": "Cast",
+    "Accounts": [
+      { "type": "YouTube", "url": "https://www.youtube.com/@withdanilee" }
+    ]
+  },
+  {
+    "Id": "2",
+    "English_Name": "Faith G. Smith",
+    "Japanese_Name": "",
+    "Image_Filename": null,
+    "Season_Name": "ALOHA STATE",
+    "Season_Year": 2016,
+    "Type": "Cast",
+    "Accounts": [
+      { "type": "YouTube", "url": "https://www.youtube.com/@itsfaithgsmith" }
+    ]
+  },
+  {
+    "Id": "3",
+    "English_Name": "Maria Castaneda",
+    "Japanese_Name": "",
+    "Image_Filename": null,
+    "Season_Name": "ALOHA STATE",
+    "Season_Year": 2016,
+    "Type": "Cast",
+    "Accounts": [
+      { "type": "YouTube", "url": "https://www.youtube.com/@mariacastanedaYT" }
+    ]
+  }
+]

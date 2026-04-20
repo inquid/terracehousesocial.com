@@ -9,7 +9,7 @@ import Group from "../components/group"
 import Search from "../components/search"
 
 const IndexPage = ({ data }) => {
-  const cast = data.allAirtable.nodes
+  const cast = data.allCastJson.nodes
   const avatars = data.allFile.nodes
   const defaultGroups = client.buildGroups(cast, avatars)
   const [groups, setGroups] = useState(defaultGroups)
@@ -74,22 +74,18 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
-    allAirtable {
+    allCastJson {
       nodes {
-        data {
-          Id
-          English_Name
-          Japanese_Name
-          Image_Filename
-          Season_Name
-          Season_Year
-          Type
-        }
-        fields {
-          Accounts {
-            type
-            url
-          }
+        Id
+        English_Name
+        Japanese_Name
+        Image_Filename
+        Season_Name
+        Season_Year
+        Type
+        Accounts {
+          type
+          url
         }
       }
     }
